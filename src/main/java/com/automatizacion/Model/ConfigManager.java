@@ -11,7 +11,6 @@ public class ConfigManager {
         try (InputStream input = ConfigManager.class.getClassLoader().getResourceAsStream("config.properties")) {
             if (input == null) {
                 System.err.println("⚠ No se encontró config.properties en resources");
-
             }
             properties.load(input);
         } catch (IOException e) {
