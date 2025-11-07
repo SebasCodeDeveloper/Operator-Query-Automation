@@ -92,3 +92,62 @@ Este proyecto demuestra mi capacidad para construir interfaces limpias, responsi
 
 ---
 
+
+
+
+<h2 align="center">
+  <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width="45px" />
+  <strong>Consulta de Operador – Automatización</strong>
+</h2>
+
+<p align="center">
+Automatización en Java + Selenium que identifica el operador telefónico de una lista de números almacenados en un archivo Excel.
+</p>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="180"/>
+</p>
+
+---
+
+## 📌 **Descripción del Proyecto**
+
+Este proyecto permite automatizar la consulta del operador móvil de uno o múltiples números telefónicos usando la página **DoctorSIM**.
+
+El sistema:
+- Lee los números desde un archivo **Excel (.xlsx)**.
+- Consulta el operador del número ingresándolo automáticamente en la página.
+- Obtiene el nombre del operador encontrado.
+- Lo escribe en la **misma hoja Excel**, en la columna correspondiente.
+
+---
+
+## 🧱 **Arquitectura del Proyecto**
+
+| Capa | Paquete | Descripción |
+|-----|---------|-------------|
+| Modelo | `com.automatizacion.Model` | Lee y escribe el archivo Excel + obtiene valores de config.properties |
+| Vista | `com.automatizacion.View` | Muestra mensajes (consola) |
+| Controlador | `com.automatizacion.Controller` | Orquesta la automatización (Selenium) |
+| Localizadores | `com.automatizacion.Locators` | Contiene los `By` de Selenium |
+| Aplicación | `App.java` | Punto de inicio del programa |
+
+---
+
+## 🚀 **Tecnologías Utilizadas**
+
+| Tecnología | Uso |
+|-----------|-----|
+| Java 17+ | Lógica principal |
+| Selenium WebDriver | Automatización web |
+| Apache POI | Lectura y escritura de Excel |
+| WebDriverManager | Manejo automático del driver |
+| Maven | Gestión del proyecto |
+
+---
+
+## ⚙️ **Configuración**
+
+Editar el archivo:
+
+
