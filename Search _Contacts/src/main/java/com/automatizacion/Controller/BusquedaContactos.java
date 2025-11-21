@@ -33,7 +33,6 @@ import org.openqa.selenium.WebElement;
 
 
 public class BusquedaContactos {
-    private ExcelManager excelManager;
     private ConsolaView vista;
     private String rutaExcel
             ;
@@ -46,7 +45,6 @@ public class BusquedaContactos {
  * */
 
     public BusquedaContactos(ExcelManager excelManager, ConsolaView vista, String rutaExcel) {
-        this.excelManager = excelManager;
         this.vista = vista;
         this.rutaExcel = rutaExcel;
     }
@@ -68,7 +66,7 @@ public class BusquedaContactos {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         try {
-            List<String> contactos = excelManager.leerContactos(rutaExcel);
+            List<String> contactos = ExcelManager.leerContactos(rutaExcel);
 
             for (int i = 0; i < contactos.size(); i++) {
                 String numero = contactos.get(i);
@@ -95,7 +93,7 @@ public class BusquedaContactos {
                     System.out.println("⚠ No se encontró operador.");
                 }
 
-                excelManager.escribirOperador(rutaExcel, i + 1, operadorResult);
+                ExcelManager.escribirOperador(rutaExcel, i + 1, operadorResult);
                 vista.mostrarMensaje("✔ " + numero + " → " + operadorResult + "\n");
             }
 
