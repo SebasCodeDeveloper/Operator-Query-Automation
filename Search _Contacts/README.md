@@ -1,4 +1,3 @@
-
 <h2 align="center">
   <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/about_me.gif?raw=true" width="45px" />
   <strong>Consulta de Operador – Automatización</strong>
@@ -92,11 +91,9 @@ El sistema:
 	
   <img src="https://raw.githubusercontent.com/bornmay/bornmay/Update/svg/Bottom.svg" alt="Github Stats" />
 </div>
+
 <div align="center">
  💡 La mejora continua no es una opción, es parte del código.
 </div> 
 
-
-
-
-
+---
